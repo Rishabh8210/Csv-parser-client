@@ -1,0 +1,98 @@
+/* Container for the file input and custom button */
+.upload-form {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Hide the default file input */
+input[type="file"] {
+  display: none;
+}
+
+/* Custom file input button */
+.custom-file-upload {
+  display: inline-block;
+  padding: 8px 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: #ddd;
+}
+
+/* Display the selected file name */
+.file-name {
+  margin-left: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+button {
+  display: inline-block;
+  padding: 8px 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.upload-message {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+p{
+  color: white;
+}
+
+table{
+  color: white;
+  text-align: center;
+}
+th,td{
+  font-size: 19px;
+  width: 200px;
+}
+
+.preview{
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #55555568;
+}
+
+.preview-screen{
+    min-height: 60%;
+    width: 60%;
+    background-color: white;
+    color: black;
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+}
+
+.preview-screen h1, p, th,td, table{
+  color: black;
+  
+}
+
+.preview-screen button{
+  margin-top: 0;
+  padding: 8px 20px;
+}
