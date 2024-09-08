@@ -19,6 +19,8 @@ const PreviewPage: FC<PreviewPageProps> = ({ questionList, setQuestionList }) =>
                 <tr>
                 <th>Title</th>
                 <th>Question Link</th>
+                <th>Topic tags</th>
+                <th>Difficulty</th>
                 </tr>
             </thead>
             <tbody>
@@ -32,6 +34,10 @@ const PreviewPage: FC<PreviewPageProps> = ({ questionList, setQuestionList }) =>
                             {question.questionLink}
                         </a>{" "}
                         </td>
+                        <td>
+                          {question.topics.join(', ')}
+                        </td>
+                        <td>{question.difficulty}</td>
                     </tr>
                     );
                 })}

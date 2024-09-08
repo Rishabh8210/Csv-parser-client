@@ -5,7 +5,9 @@ import PreviewPage from "./PreviewPage";
 
 export interface IQuestion {
     title: string,
-    questionLink: string    
+    questionLink: string,
+    topics: string[],
+    difficulty: string 
 }
 
 const Homepage = () => {
